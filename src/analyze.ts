@@ -375,11 +375,6 @@ export function analyzeTransactionLogs(tx: TransactionLogs): OrderFill[] {
  * target (the resolver contract), and stop where the chain fans out.
  */
 function markTopLevelFills(fills: OrderFill[], txTo: string | null): void {
-  if (fills.length === 1) {
-    fills[0]!.topLevel = true;
-    return;
-  }
-
   const bracketed = fills.filter((fill) => fill.src !== null);
   const span = (fill: OrderFill): number =>
     fill.orderFilledLogIndex - fill.src!.logIndex;
