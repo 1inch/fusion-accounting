@@ -1,0 +1,27 @@
+{
+  "name": "fusion-accounting",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Per-order fill accounting for 1inch Fusion settlement transactions, reconstructed from transaction logs",
+  "type": "module",
+  "packageManager": "pnpm@10.6.2",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "analyze": "tsx src/cli.ts",
+    "record-fixture": "tsx scripts/record-fixture.ts",
+    "lint:types": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "viem": "^2.44.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "__source": "Dune oneinch.swaps (mode='fusion', blockchain='ethereum'), query https://dune.com/queries/8253529, execution 01KZE0RG64C2WA28BZPMAHVM77. srcAmountFilled = complement['making_amount'], dstGross = complement['taking_amount'] (realized fill call outputs, decoded by the 1inch Dune spellbook from call traces — independent of receipt logs). receiver '0x' means the order used the default receiver (the maker).",
+  "orders-1-plain": {
+    "txHash": "0x867e95bfa428a8f43779ac5e5e743d4960c5c740b93c5ad7ebe280ab1f11bad1",
+    "expectedFills": [
+      {
+        "dstGross": "1595748845040418487660",
+        "dstToken": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+        "maker": "0xb0829450d0f811dff6ed9c73d95b597d8e560567",
+        "orderHash": "0x306fef3c04669ed9d2ef947102333cce01e25a065518a68e6b7640f78c75e5e1",
+        "receiver": "0x",
+        "srcAmountFilled": "1596346837",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      }
+    ]
+  },
+  "orders-1-fee-ext": {
+    "txHash": "0x070b02d6f9c57dae50b47b90a11b0c2194508cd57a06dbb2d609e0f6f48cf11f",
+    "expectedFills": [
+      {
+        "dstGross": "426411983",
+        "dstToken": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+        "maker": "0xda2efffa45cf5d960209aa0921cf42a4a2a085cf",
+        "orderHash": "0x4dea64545a90890548f526cf528beab74634fe226af2b892b39751a952a9a397",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "3840922700000000000000",
+        "srcToken": "0xba100000625a3754423978a60c9317c58a424e3d"
+      }
+    ]
+  },
+  "orders-2-nested": {
+    "txHash": "0xb400d8744a80fcb0bd1fe1662429c66a7f3de2efe5d81399d95bca8403dc69db",
+    "expectedFills": [
+      {
+        "dstGross": "251933803",
+        "dstToken": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "maker": "0xfae35dfdb69cac33f7ea83bcef1ae1ab1e683324",
+        "orderHash": "0x6eea0a74766ae1270894decf070c961040e82658c80f11ad95ef7c38a6123fe0",
+        "receiver": "0x",
+        "srcAmountFilled": "325366773401114975",
+        "srcToken": "0xfedc5f4a6c38211c1338aa411018dfaf26612c08"
+      },
+      {
+        "dstGross": "249976370",
+        "dstToken": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "maker": "0x0040ed863772a9f6f7457b540701e4522dbb5543",
+        "orderHash": "0x8275275f51cb45ff552aefd95be78012cfa78e437c1b91eae27dec67ed6fe0e8",
+        "receiver": "0x",
+        "srcAmountFilled": "322841566419442037",
+        "srcToken": "0xfedc5f4a6c38211c1338aa411018dfaf26612c08"
+      }
+    ]
+  },
+  "orders-3-custom-receivers": {
+    "txHash": "0x9d898fefcebe593bbe937948a08114faf72780f233868cb51bd0ca2a9390d520",
+    "expectedFills": [
+      {
+        "dstGross": "1998944583",
+        "dstToken": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+        "maker": "0xb0829450d0f811dff6ed9c73d95b597d8e560567",
+        "orderHash": "0x18894213ce116301cd31ef1fc8b5970a8dacd7a01d8e42db9e892f32e0061b5c",
+        "receiver": "0xc75b38b84b69880f41800cfd40c397ef4e4c2305",
+        "srcAmountFilled": "1999800000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "1306980062",
+        "dstToken": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+        "maker": "0xb31765d45a6bc3fbec16b162be1aabcbee6911e3",
+        "orderHash": "0xfd5881ea5756950589a59da2414df04d4fbd39a2e102b9e02dac753d40bab55e",
+        "receiver": "0xb0829450d0f811dff6ed9c73d95b597d8e560567",
+        "srcAmountFilled": "1305431403541641230125",
+        "srcToken": "0x6b175474e89094c44da98b954eedeac495271d0f"
+      },
+      {
+        "dstGross": "10007928405",
+        "dstToken": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+        "maker": "0xb31765d45a6bc3fbec16b162be1aabcbee6911e3",
+        "orderHash": "0x5040223056866d5ad3f698fb52e6c81bd0b39df91bfa7d88eb08030ab53c0ee3",
+        "receiver": "0xb0829450d0f811dff6ed9c73d95b597d8e560567",
+        "srcAmountFilled": "9999000000000000000000",
+        "srcToken": "0xdc035d45d973e3ec169d2276ddab16f1e407384f"
+      }
+    ]
+  },
+  "orders-4-fee-split": {
+    "txHash": "0x4d224b8293f29a8da58306cb0485a07ff0711c7164a93f41d76b0d0120a26486",
+    "expectedFills": [
+      {
+        "dstGross": "8858",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0x70c1411b0cf2ca44107eb2374ddac3e797e89b61",
+        "orderHash": "0xcca134a25b43db69e7a11b1a27a52e2c2ff3a9546ed5fec78379e36228c05986",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "36000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "8858",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0xbfd44afb99bf46246240c7ee8cdefe7184d9aa99",
+        "orderHash": "0x3c324ed59e8d83e6214c00401de4ed600d747784dc462b2490b21ad42559be4b",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "36000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "8859",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0x50053eabc6776499358c133416f866ad4459a083",
+        "orderHash": "0x381aa7456cccd8ed557e4b12b7b80505711cf21976236566e42e1e6b891bd2cd",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "36000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "8859",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0x0ada3a19158119f7d5871e3dd335b0634097789c",
+        "orderHash": "0xcc0894c75bdc8c057bc4c9427e617d45c3a1fbc0ad5cd16b68d2ee4d5650121b",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "36000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      }
+    ]
+  },
+  "orders-6-mixed": {
+    "txHash": "0xb8a8b327636d0bfef4bfa5fa73f0b25fe3c3ed546a241e0f894314705418b0f3",
+    "expectedFills": [
+      {
+        "dstGross": "8634632655161165948442",
+        "dstToken": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+        "maker": "0xb31765d45a6bc3fbec16b162be1aabcbee6911e3",
+        "orderHash": "0x392db7e23a2d7cc37fcf524b52d9c20d501904e47a76bace39e82f46c469b9c4",
+        "receiver": "0x",
+        "srcAmountFilled": "8633017342431449740895",
+        "srcToken": "0x6b175474e89094c44da98b954eedeac495271d0f"
+      },
+      {
+        "dstGross": "5002350140",
+        "dstToken": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "maker": "0x469b82e600680f06aaff5198079404edba24a2c7",
+        "orderHash": "0xe30488b16a565b88e62efced8b90af3f9840081a6d3bb7df754bb463f25a8602",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "5000000000000000000000",
+        "srcToken": "0x6b175474e89094c44da98b954eedeac495271d0f"
+      },
+      {
+        "dstGross": "3057914877588014070568",
+        "dstToken": "0x8292bb45bf1ee4d140127049757c2e0ff06317ed",
+        "maker": "0xb0829450d0f811dff6ed9c73d95b597d8e560567",
+        "orderHash": "0xd538231d3170e2ce3eba7da85a762073c86ddcae33b8d8d0aa0bb8382aa9fa84",
+        "receiver": "0xc75b38b84b69880f41800cfd40c397ef4e4c2305",
+        "srcAmountFilled": "3057156759121320151918",
+        "srcToken": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3"
+      },
+      {
+        "dstGross": "10002389296276204187184",
+        "dstToken": "0x6b175474e89094c44da98b954eedeac495271d0f",
+        "maker": "0xb31765d45a6bc3fbec16b162be1aabcbee6911e3",
+        "orderHash": "0x502e1eb524e45d6226128148b758b7e2defefc6fc4ef8a772f50e7fdd56f9793",
+        "receiver": "0x",
+        "srcAmountFilled": "9999000000000000000000",
+        "srcToken": "0xdc035d45d973e3ec169d2276ddab16f1e407384f"
+      },
+      {
+        "dstGross": "1342330592",
+        "dstToken": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "maker": "0xb31765d45a6bc3fbec16b162be1aabcbee6911e3",
+        "orderHash": "0x8cbd51a83c58524e8aa1923d99adb203203fd138c685cb96f9bae636fb1e3c2e",
+        "receiver": "0xc75b38b84b69880f41800cfd40c397ef4e4c2305",
+        "srcAmountFilled": "1214100220416238875754",
+        "srcToken": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd"
+      },
+      {
+        "dstGross": "2334674266329884205587",
+        "dstToken": "0x111111111117dc0aa78b770fa6a738034120c302",
+        "maker": "0x8f77d95e89bbe87777d6cd8c1c65117fe3e4f22f",
+        "orderHash": "0xa13e4b2f660b9352379cfcb8be68056d589d568ef6e974e6b8e40a99f2f22f6a",
+        "receiver": "0x",
+        "srcAmountFilled": "630671000000000000000",
+        "srcToken": "0x163f8c2467924be0ae7b5347228cabf260318753"
+      }
+    ]
+  },
+  "orders-26-large-batch": {
+    "txHash": "0xc953917f382509506c4b3c60d58031a9bfa118933d9ae705e811d66c8718e45c",
+    "expectedFills": [
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0x14184c47a0b8d089f59fc6a08dda31279ccf4671",
+        "orderHash": "0xffb0487d49f447f22bc3da3002af5b2e2ca03f67e04a944d82cb9d9c137a18e1",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0x796efa91e3e376437684a9147ce71a367e800383",
+        "orderHash": "0x836509bf5ab40d26c3d7d2e66c5d449c0cbb1cb960521c2a2b34878f55286c85",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0xa1ecbf8e20a45d35aee3a7cb269326d9d94d189d",
+        "orderHash": "0x14e43458d569c9ef134bff10858d145a1778d18a1c3debcf96e87c6387f98575",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0x32e1fe209dc0a5e46ad85e62a0e765b4900a67e6",
+        "orderHash": "0x5b35d35e9f346cfc7ce9212cb200a967c3436c841638ed371f19d8d1b0072887",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0x3be3b62e4b01e56b87693f956c306b704e33eaf3",
+        "orderHash": "0x1d09be34642494576c8d0caa0fd5cfcebceb4eb99d08aa9f92001f6b456c4471",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0xdc7708c6fc86f8be2453b5afc3b832bc769e0d2f",
+        "orderHash": "0x5dd7198d9c330ac00b14b370c50d701c0d5318d021118237e5fd480aa509b8ea",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0xc823be80604a9811c4e9972410f9dadc305ac132",
+        "orderHash": "0x1888b5959f162ecba8ed4f8b54fd4967478829e0876cd6455fe09a57f9d199d9",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0xbab6138d6cbb9326ccfe5d35b716861fb402ffa1",
+        "orderHash": "0xd7e704e5d5a65aab5661c272321e68fcef8fba80564eddcab7ec67b4a06c0d61",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0x0ce3c3fd731d12becfd8c86464fdccd4b88ed8cc",
+        "orderHash": "0xf082ac1ea9e552dae47fe3e7184ddac6b6cfcd82f65b43d26194d6a25e66bc7d",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0xe005bf4a1dccc2d311244e0aa4ea8a094a7aa7e4",
+        "orderHash": "0x038c0446c9e6418fbe043556e84553771f008a47eafd25a4ba36d5a1acede8e2",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0xa09c9ce27fac85b620a142e76ddf274b0e1532c6",
+        "orderHash": "0xe7765a4df36af8b22147392a57f3b9c3d8ee4443c8426925da82fef6662ba6f3",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0x29ed855e65f9cecaaf6ff7ba4ea590d7a5a9ef44",
+        "orderHash": "0x3d7923b7dc955b9ee1fc49064132c18ea0e1367f8e0622de79e2858ab0d2d188",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0xf6b116673e649931d7a4676f7b5bf361eac0e305",
+        "orderHash": "0x1b289cb2594f9c2876e490952441e321162beaa0b1c7e30184a5fe406969e035",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0x3eb7650b212c463568f3b3518d65dafe220d81c3",
+        "orderHash": "0x2a78b7ee8117dc4adf6ae4b3568682635fc7f590eb56ad9a04f3eaee5f6f7b53",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0xec13dc2bc285a5227da265f1bd9ca62b129224e0",
+        "orderHash": "0xcf9d41c59751dc2c8fbdadf12503b1d9049f467590608d31f8f53427b7135053",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0x8f1b16919be9391fbe1006ff1aed7523b872a123",
+        "orderHash": "0x5ead9605bd3937bf3f1ff204a13f2a24b0c9094fde93166a90191f048049a770",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0xe9fd7131b2879c4c935753d945861ee50a9a9518",
+        "orderHash": "0xb320f3bb0fb8ab9ac3056a71a3e44125b61a7baf3d57f41c3badbe36c8b9d4c2",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0x5f6e069b6f8b00724dc1412675ed2f1a7985b9a7",
+        "orderHash": "0xc54919d772708a4d44fcdf11660880ca0aee883224e6bb26b27654f7683af9ac",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0x8fc3fc7f403332c89f924a9a7da95b12db137e12",
+        "orderHash": "0xc5fdb0c8803ce1689aa8ae8f23b68270861172e543ef351ab1e1bf5fde956a99",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0xadf2cf151b7a302976aeabb3b68f99f1d4f653b8",
+        "orderHash": "0x4e71253808f4dfdd00d7785f8f9ce31acfe73c79764652c7a234bbfe3f5cac60",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0x668cc04c6c30dafb8e58ad66cc974237fe01694c",
+        "orderHash": "0x537ddcfbecce39af4b5f27b476790729e86b54b0136a67684322daa56d7e9774",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0xdbf36b8836ec3034b4567b5f62f1129e9a7a0805",
+        "orderHash": "0xb8f2b292ce27508502de66fdd6b2ec45853dc0552904809f9bd4a9c561522a37",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0x72647e7baa72c1ce4f3a9f3f19e83da1bc047b99",
+        "orderHash": "0x8f2c0b84f6d27b59b71bf042c271bc3917466d3ce37a966160644f518ae81034",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7383",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0x66359c0aa5418bbb529563c1ea68332392be0064",
+        "orderHash": "0xa00f5c0d017818036f4a524c16c9635ebfbb1658ca6d82c2f51dbd1a3264c0ee",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "30000000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7869",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0xb1d21cd38eaedd74d0f8033fc898a6500c938dd5",
+        "orderHash": "0xc1de66c05ebd8fa80203b79857ced6cd4cb50bf7e7c359a12741acd199504032",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "31960000",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      {
+        "dstGross": "7850",
+        "dstToken": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+        "maker": "0x0da73d86f981df7d3fc843542562501450cf52eb",
+        "orderHash": "0xa967a6da3106b91f1475f088dfe69c4040978e04006e5d79312e6e8e8f6a8994",
+        "receiver": "0x399740157391a9f1bf4e9921a8834f9bc8f2678e",
+        "srcAmountFilled": "31891093",
+        "srcToken": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      }
+    ]
+  }
+}
